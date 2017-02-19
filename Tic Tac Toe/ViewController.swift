@@ -23,10 +23,17 @@ class ViewController: UIViewController {
     var gameIsActive = true
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var nextPiece: UIImageView!
+
+    
+    
+    
+    @IBOutlet weak var nextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        nextPiece.image = UIImage(named: "Cross.png")
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,17 +51,21 @@ class ViewController: UIViewController {
         
         if (gameState[sender.tag-1] == 0 && gameIsActive == true)
         {
+            
             gameState[sender.tag-1] = activePlayer
             
             if (activePlayer == 1)
             {
                 sender.setImage(UIImage(named: "Cross.png"), for: UIControlState())
                 activePlayer = 2
+                nextPiece.image = UIImage(named: "Nought.png")
             }
             else
             {
                 sender.setImage(UIImage(named: "Nought.png"), for: UIControlState())
                 activePlayer = 1
+                nextPiece.image = UIImage(named: "Cross.png")
+
             }
         }
         
@@ -92,6 +103,9 @@ class ViewController: UIViewController {
                     button.isUserInteractionEnabled = false
                     
                 }
+                
+                nextPiece.image = nil
+                nextLabel.isHidden = true
             }
             
             
@@ -116,6 +130,11 @@ class ViewController: UIViewController {
                     button.isUserInteractionEnabled = false
                     
                 }
+                nextPiece.image = nil
+                nextLabel.isHidden = true
+
+
+
             }
         }
 
@@ -140,6 +159,10 @@ class ViewController: UIViewController {
             button.isUserInteractionEnabled = true
         }
         
+        nextPiece.image = UIImage(named: "Cross.png")
+        
+        nextLabel.isHidden = false
+      
     }
     
     
