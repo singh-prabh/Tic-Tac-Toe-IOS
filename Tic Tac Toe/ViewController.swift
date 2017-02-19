@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
+    
+    
     var activePlayer = 1 //Cross
     
     var gameState = [0,0,0,0,0,0,0,0,0]
@@ -63,15 +67,35 @@ class ViewController: UIViewController {
                 if gameState[combination[0]] == 1
                 {
                     label.text = "CROSS HAS WON!"
+                    for i in combination{
+                        let button = view.viewWithTag(i+1) as! UIButton
+                        button.setImage(UIImage(named: "Blue Cross.png"), for: UIControlState())
+                        
+                    }
+                    
                 }
                 else
                 {
                     label.text = "NOUGHT HAS WON!"
+                    for i in combination{
+                        let button = view.viewWithTag(i+1) as! UIButton
+                        button.setImage(UIImage(named: "Red Nought.png"), for: UIControlState())
+                        
+                    }
                 }
                 
                 playAgainLabel.isHidden = false
                 label.isHidden = false
+                
+                for i in 1...9{
+                    let button = view.viewWithTag(i) as! UIButton
+                    button.isUserInteractionEnabled = false
+                    
+                }
             }
+            
+            
+            
         }
         
         var count = 1
@@ -85,6 +109,13 @@ class ViewController: UIViewController {
                 label.text = "IT WAS A DRAW"
                 label.isHidden = false
                 playAgainLabel.isHidden = false
+                gameIsActive = false
+                
+                for i in 1...9{
+                    let button = view.viewWithTag(i) as! UIButton
+                    button.isUserInteractionEnabled = false
+                    
+                }
             }
         }
 
@@ -106,7 +137,7 @@ class ViewController: UIViewController {
         for i in 1...9{
             let button = view.viewWithTag(i) as! UIButton
             button.setImage(nil, for: UIControlState())
-            
+            button.isUserInteractionEnabled = true
         }
         
     }
