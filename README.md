@@ -1,3 +1,3 @@
 # Tic-Tac-Toe-IOS
 
-![](images/GameScreen.png?raw=true)
+![](GameScreen.png?raw=true)
