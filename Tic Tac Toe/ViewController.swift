@@ -80,7 +80,7 @@ class ViewController: UIViewController {
                     label.text = "CROSS HAS WON!"
                     for i in combination{
                         let button = view.viewWithTag(i+1) as! UIButton
-                        button.setImage(UIImage(named: "Blue Cross.png"), for: UIControlState())
+                        button.setImage(UIImage(named: "White Cross.png"), for: UIControlState())
                         
                     }
                     
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                     label.text = "NOUGHT HAS WON!"
                     for i in combination{
                         let button = view.viewWithTag(i+1) as! UIButton
-                        button.setImage(UIImage(named: "Red Nought.png"), for: UIControlState())
+                        button.setImage(UIImage(named: "White Nought.png"), for: UIControlState())
                         
                     }
                 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4D37181E5966FE00AB15AF /* Blue Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D37161E5966FE00AB15AF /* Blue Cross.png */; };
-		1A4D37191E5966FE00AB15AF /* Red Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D37171E5966FE00AB15AF /* Red Nought.png */; };
+		1A4D37181E5966FE00AB15AF /* White Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D37161E5966FE00AB15AF /* White Cross.png */; };
+		1A4D37191E5966FE00AB15AF /* White Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D37171E5966FE00AB15AF /* White Nought.png */; };
 		1AC8A2C81E59305800134944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8A2C71E59305800134944 /* AppDelegate.swift */; };
 		1AC8A2CA1E59305800134944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8A2C91E59305800134944 /* ViewController.swift */; };
 		1AC8A2CD1E59305800134944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC8A2CB1E59305800134944 /* Main.storyboard */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A4D37161E5966FE00AB15AF /* Blue Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Cross.png"; sourceTree = "<group>"; };
-		1A4D37171E5966FE00AB15AF /* Red Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Nought.png"; sourceTree = "<group>"; };
+		1A4D37161E5966FE00AB15AF /* White Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Cross.png"; sourceTree = "<group>"; };
+		1A4D37171E5966FE00AB15AF /* White Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Nought.png"; sourceTree = "<group>"; };
 		1AC8A2C41E59305800134944 /* Tic Tac Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Tac Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC8A2C71E59305800134944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC8A2C91E59305800134944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 				1AC8A2D91E5930A700134944 /* Board.png */,
 				1AC8A2DA1E5930A700134944 /* Cross.png */,
 				1AC8A2DB1E5930A700134944 /* Nought.png */,
-				1A4D37161E5966FE00AB15AF /* Blue Cross.png */,
-				1A4D37171E5966FE00AB15AF /* Red Nought.png */,
+				1A4D37161E5966FE00AB15AF /* White Cross.png */,
+				1A4D37171E5966FE00AB15AF /* White Nought.png */,
 				1AC8A2C51E59305800134944 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,11 +142,11 @@
 				1AC8A2DE1E5930A700134944 /* Nought.png in Resources */,
 				1AC8A2DC1E5930A700134944 /* Board.png in Resources */,
 				1AC8A2D21E59305800134944 /* LaunchScreen.storyboard in Resources */,
-				1A4D37181E5966FE00AB15AF /* Blue Cross.png in Resources */,
+				1A4D37181E5966FE00AB15AF /* White Cross.png in Resources */,
 				1AC8A2DD1E5930A700134944 /* Cross.png in Resources */,
 				1AC8A2CF1E59305800134944 /* Assets.xcassets in Resources */,
 				1AC8A2CD1E59305800134944 /* Main.storyboard in Resources */,
-				1A4D37191E5966FE00AB15AF /* Red Nought.png in Resources */,
+				1A4D37191E5966FE00AB15AF /* White Nought.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
